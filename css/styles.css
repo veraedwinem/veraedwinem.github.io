@@ -517,7 +517,7 @@ width: 100%;
   transform: scale(1.5);
 }
 
-button[type="submit"]{
+.form-button{
   width: 40%;
   font-family: var(--font-base);
   background-color: var(--dark-green);

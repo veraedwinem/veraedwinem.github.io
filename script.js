@@ -128,6 +128,8 @@ function sendMail () {
     contact_phone : document.getElementById('contact_phone').value,
   }
 
+  console.log(contact_name);
+
   emailjs.send("service_r07a6p3","template_yh19gmc", params).then(function(res){
     alert("Gracias por contactarme, pronto tendrás noticias mías. Saludos!" + res.status)
   })
