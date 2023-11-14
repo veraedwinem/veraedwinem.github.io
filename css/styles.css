@@ -606,6 +606,10 @@ button[type="submit"]:hover{
   background-position: center;
 }
 
+*{
+  text-decoration: none;
+}
+
 .footer-link{
   text-decoration: underline;
 }
@@ -823,6 +827,10 @@ button[type="submit"]:hover{
   grid-template-columns: 1fr;
 }
 
+.cursor-dot,
+.cursor-dot-outline{
+  display: none;
+}
 
 }
 
