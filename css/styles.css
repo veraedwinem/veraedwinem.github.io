@@ -691,7 +691,7 @@ button[type="submit"]:hover{
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
   .navicon-container {
     display: flex;
   }
@@ -831,6 +831,72 @@ button[type="submit"]:hover{
 .cursor-dot-outline{
   display: none;
 }
+
+}
+
+@media (max-width: 1300px){
+  .navicon-container {
+    display: flex;
+  }
+
+  .navbar{
+    background-color: var(--dark-green);
+  }
+
+  .sticky{
+    position: relative;
+  }
+
+  .bubbles{
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-green);
+  }
+
+  .logo img{
+    width: 50%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .about-text{
+    padding: 1em;
+  }
+
+  .about-title{
+    margin-bottom: 1em;
+  }
+
+  .services-title{
+    padding-top: 7vh;
+  }
+
+  .contacto-img img{
+    width: 100%;
+  }
+
+  .carousel figure{
+    width: 100%;
+  }
+
+  .carousel{
+    perspective: 44em;
+  }
+
+  .cta{
+    margin-top: 0.6em;
+  }
+
+  .textbox-paragraph{
+    font-size: 1.3em;
+  }
 
 }
 
