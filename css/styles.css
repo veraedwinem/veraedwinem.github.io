@@ -688,12 +688,20 @@ button[type="submit"]:hover{
 
 
 @media (max-width: 480px) {
-  .navbar {
-    display: none;
-  }
-
   .navicon-container {
     display: flex;
+  }
+
+  .navbar{
+    background-color: var(--dark-green);
+  }
+
+  .sticky{
+    position: relative;
+  }
+
+  .bubbles{
+    display: none;
   }
 
   .mobile-nav {
