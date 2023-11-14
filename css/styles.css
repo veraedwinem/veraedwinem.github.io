@@ -492,12 +492,12 @@ input[type="text"]:hover{
 }
 
 
-#contact-name,#contact-email, #contact-phone{
+#contact_name,#contact_email, #contact_phone{
 width: 100%;
 
 }
 
-#contact-msg{
+#contact_msg{
   width: 100%;
 }
 

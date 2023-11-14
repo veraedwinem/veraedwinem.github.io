@@ -120,4 +120,18 @@ function addClassList(list, clas) {
 addEventListenerList(mobileLinks, "click", toggleMenuA);
 
 
+function sendMail () {
+  var params = {
+    contact_name : document.getElementById('contact_name').value,
+    contact_email: document.getElementById('contact_email').value,
+    contact_msg : document.getElementById('contact_msg').value,
+    contact_phone : document.getElementById('contact_phone').value,
+  }
+
+  emailjs.send("service_r07a6p3","template_yh19gmc", params).then(function(res){
+    alert("Gracias por contactarme, pronto tendrás noticias mías. Saludos!" + res.status)
+  })
+}
+
+
 

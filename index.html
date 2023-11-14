@@ -16,6 +16,12 @@
     <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('3rLhY2x7e32Cn3vRh');
+        })();
+    </script>
     <title>EdDev Portfolio</title>
 </head>
 
@@ -185,14 +191,14 @@
 
             <form action="" class="contact-form">
                 <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" id="contact-name" placeholder="Tu nombre aquí">
+                <input type="text" name="Nombre" id="contact_name" placeholder="Tu nombre aquí">
                 <label for="Telefono">Teléfono</label>
-                <input type="text" name="Telefono" id="contact-phone" placeholder="Tu teléfono acá">
+                <input type="text" name="Telefono" id="contact_phone" placeholder="Tu teléfono acá">
                 <label for="Email">Email</label>
-                <input type="text" name="Email" id="contact-email" placeholder="Tu correo de este lado">
+                <input type="text" name="Email" id="contact_email" placeholder="Tu correo de este lado">
                 <label for="Message">Mensaje</label>
-                <input type="text" name="Message" id="contact-msg" placeholder="Platicame en que puedo ayudarte">
-                <button type="submit" class="hvr-bounce-to-right">Enviar</button>
+                <input type="text" name="Message" id="contact_msg" placeholder="Platicame en que puedo ayudarte">
+                <button type="submit" class="hvr-bounce-to-right" onclick="sendMail()">Enviar</button>
             </form>
         </div>
     </section>
