@@ -120,6 +120,8 @@ function addClassList(list, clas) {
 addEventListenerList(mobileLinks, "click", toggleMenuA);
 
 
+//Función para mandar EMAILS del Formulario
+
 function sendMail () {
   var params = {
     contact_name : document.getElementById('contact_name').value,
