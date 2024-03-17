@@ -9,16 +9,18 @@
     <link type="text/css" rel="stylesheet" href="./css/hover.css">
     <link type="text/css" rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Favicon Config -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <!-- Scripts -->
     <script src="https://unpkg.com/kinet@2.2.1/dist/kinet.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init('3rLhY2x7e32Cn3vRh');
         })();
@@ -42,27 +44,27 @@
                 <li class="links"><a href="#servicios">Servicios</a></li>
                 <li class="links"><a href="#portafolio">Portafolio</a></li>
                 <li class="links"><a href="#contacto">Contacto</a></li>
-            </u </div>
+            </u>
 
 
 
-            <div class="mobile-nav">
+        <div class="mobile-nav">
 
-                <div class='navicon-container' id="toggle">
-                    <div class='bar'></div>
-                    <div class='bar'></div>
-                    <div class='bar'></div>
-                </div>
-
-                <ul class="mobile-menu">
-                    <div class="menu-container">
-                        <li class="" id="mobile-links"><a href="#">Inicio</a></li>
-                        <li class="" id="mobile-links"><a href="#acercade">Acerca de</a></li>
-                        <li class="" id="mobile-links"><a href="#servicios">Servicios</a></li>
-                        <li class="" id="mobile-links"><a href="#portafolio">Portafolio</a></li>
-                        <li class="" id="mobile-links"><a href="#contacto">Contacto</a></li>
-                </ul>
+            <div class='navicon-container' id="toggle">
+                <div class='bar'></div>
+                <div class='bar'></div>
+                <div class='bar'></div>
             </div>
+
+            <ul class="mobile-menu">
+                <div class="menu-container">
+                    <li class="" id="mobile-links"><a href="#">Inicio</a></li>
+                    <li class="" id="mobile-links"><a href="#acercade">Acerca de</a></li>
+                    <li class="" id="mobile-links"><a href="#servicios">Servicios</a></li>
+                    <li class="" id="mobile-links"><a href="#portafolio">Portafolio</a></li>
+                    <li class="" id="mobile-links"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
         </div>
 
         <div class="hero">
@@ -91,7 +93,7 @@
                 en la creación de sitios web funcionales y visualmente atractivos. Creo que el mundo digital debe ser
                 accesible para todos y trabajo incansablemente para hacerlo realidad. Con un ojo agudo para los detalles
                 y un amor por el código limpio y eficiente, creo experiencias web que dejan una impresión duradera.</p>
-            <button class="cta ex-button hvr-bounce-to-right"> Solicitar cita </button>
+            <button class="cta ex-button hvr-bounce-to-right"> <a href="#contacto">Solicitar cita</a></button>
         </div>
 
     </section>
@@ -176,7 +178,8 @@
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/photo8.png" alt="project-7">
-                    <a href="https://crmexico.org" target="_blank" class="carousel-link hvr-float">Celebremos México Multipage</a>
+                    <a href="https://crmexico.org" target="_blank" class="carousel-link hvr-float">Celebremos México
+                        Multipage</a>
                 </div>
                 <!-- Add more carousel items as needed -->
             </figure>
@@ -207,7 +210,8 @@
                 <label for="Email">Email</label>
                 <input type="text" name="Email" id="contact_email" placeholder="Tu correo de este lado" required>
                 <label for="Message">Mensaje</label>
-                <input type="text" name="Message" id="contact_msg" placeholder="Platicame en que puedo ayudarte" required>
+                <input type="text" name="Message" id="contact_msg" placeholder="Platicame en que puedo ayudarte"
+                    required>
                 <button type="button" onclick="sendMail()" class="form-button hvr-bounce-to-right">Enviar</button>
             </form>
         </div>

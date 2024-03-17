@@ -291,7 +291,11 @@
   font-size: 1.8vh;
 }
 
-.cta:hover {
+.cta a{
+  color: var(--light-green);
+}
+
+.cta:hover, cta a{
   cursor: pointer;
 }
 
