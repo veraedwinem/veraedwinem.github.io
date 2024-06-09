@@ -8,9 +8,9 @@
   --light-green: #e4e6c3;
   --partial-white: #f7f7f2;
   --font-base: 'Plus Jakarta Sans';
-  --title-size: 1.8em;
-  --subtitle-size: 1em;
-  --paragraph-size: 1.3em;
+  --title-size: 1.5em;
+  --subtitle-size: .8em;
+  --paragraph-size: 1em;
 
 }
 
@@ -122,16 +122,16 @@
   list-style: none;
   justify-content: space-between;
   width: 60%;
-  height: 5em;
+  height: 4em;
 }
 
 .menu a {
   text-decoration: none;
   color: var(--partial-white);
   font-family: var(--font-base);
-  font-weight: 200;
+  font-weight: 300;
   transition: all 0.3s ease-in;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .menu li>a:hover {
@@ -295,7 +295,7 @@
   margin-top: 20px;
   font-family: var(--font-base);
   font-weight: light;
-  font-size: 1.8vh;
+  font-size: 1em;
 }
 
 .cta a{
@@ -452,10 +452,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  height: 85vh;
   overflow: visible;
   background-color: var(--dark-green);
-  padding: 5em 0;
+  padding: 2em 0;
 }
 
 #contacto-titulo{
@@ -495,15 +495,16 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  width: 80%;
+  width: 90%;
   max-width: 800px;
   color: var(--partial-white);
   background-color: var(--medium-green);
   padding: 2em;
   border-radius: 2em;
   font-family: var(--font-base);
-  font-size: 1.6em;
+  font-size: 1.4em;
   justify-content: center;
+  z-index: 3;
 }
 
 input[type="text"] {
@@ -570,7 +571,7 @@ width: 100%;
 }
 
 .contacto-img img{
-  width: 50%;
+  width: 80%;
   transition: all 0.5s ease-in;
 }
 
@@ -600,34 +601,19 @@ button[type="submit"]:hover{
 
 }
 
+.footer-section{
+  width: 100%;
+}
+
 .footer {
-  z-index: 1;
   --footer-background: var(--light-green);
-  display: grid;
-  position: relative;
-  grid-area: footer;
-  min-height: 12rem;
+  display: flex;
+  width: 100%;
 }
-.bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1rem;
-  background: var(--footer-background);
-  filter: url("#blob");
-}
-.bubbles .bubble {
-  position: absolute;
-  left: var(--position, 50%);
-  background: var(--footer-background);
-  border-radius: 100%;
-  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
-  transform: translate(-50%, 100%);
-}
+
 .footer-content {
   z-index: 2;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 4rem;
@@ -883,6 +869,7 @@ button[type="submit"]:hover{
 
 .contact-form{
   width: 100%;
+
 }
 
 .carousel{
